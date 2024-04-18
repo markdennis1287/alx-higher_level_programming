@@ -1,0 +1,23 @@
+"""
+This test case tests BaseGeometry class from the  module.
+"""
+>>> module_sys = __import__("sys")
+>>> sys = module_sys
+>>> sys.path.append("..")
+>>> module_name = "7-base_geometry"
+>>> module = __import__(module_name)
+>>> BaseGeometry = getattr(module, "BaseGeometry")
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", 12)
+>>> bg.integer_validator("age", 0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/root/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 27, in integer_validator
+    raise ValueError("{} must be greater than 0".format(name))
+ValueError: age must be greater than 0
+>>> bg.integer_validator("name", "John")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/root/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 25, in integer_validator
+    raise TypeError("{} must be an integer".format(name))
+TypeError: name must be an integer
