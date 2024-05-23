@@ -1,11 +1,11 @@
---Create table second_table if it doesn't exist--
+-- Create table second_table if it doesn't exist
 CREATE TABLE IF NOT EXISTS second_table(
 	id INT,
 	name VARCHAR(256),
 	score INT
 );
 
---insert records--
+-- insert records
 INSERT INTO second_table (id, name, score)
 VALUES
     (1, 'John', 10),

@@ -1,3 +1,3 @@
---Lists all rows ffrom first_table--
-SHOW * FROM first_table;
+-- Lists all rows ffrom first_table
+SELECT * FROM first_table;
 

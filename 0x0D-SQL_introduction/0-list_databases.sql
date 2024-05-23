@@ -1,3 +1,3 @@
---Lists all databass--
+-- Lists all databases
 SHOW DATABASES;
 
