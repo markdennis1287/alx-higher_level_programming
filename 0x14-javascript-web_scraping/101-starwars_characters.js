@@ -38,4 +38,3 @@ function getCharacterNamesInOrder(characters, index) {
     });
   }
 }
-
