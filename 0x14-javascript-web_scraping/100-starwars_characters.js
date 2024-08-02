@@ -25,7 +25,7 @@ request(apiUrl, (error, response, body) => {
   }
 });
 
-function getCharacterNames(characters, index) {
+function getCharacterNames (characters, index) {
   if (index < characters.length) {
     request(characters[index], (error, response, body) => {
       if (!error && response.statusCode === 200) {
